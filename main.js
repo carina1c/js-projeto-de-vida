@@ -45,4 +45,4 @@ function comecaCronometro(){
     atualizacronometro();
     setInterval(atualizacronometro, 1000);
 }
-comecaCronometro();
+//comecaCronometro();
