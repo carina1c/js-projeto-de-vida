@@ -33,9 +33,10 @@ segundos %=60;
 minutos %=60;
 horas %=24;
 
-return dias + " dias " + horas+" horas " + minutos+" minutos " +segundos +"segundos";
-}
-
+if(tempoFinal > 0){
+return [dias,horas,minutos,segundos];
+}else{
+return[0, 0, 0, 0];
 function atualizacronometro(){
     for (let i = 0; i < contadores.length;i++){
         contadores[i].textContent = calculaTempo(tempos[i]);
